@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fingertap.RightActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical"
+
+        android:id="@+id/informationPage1">
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/tap2"
+            />
+
+        <Button
+            android:layout_height="40sp"
+            android:layout_width="150sp"
+            android:layout_gravity="bottom"
+            style="@style/ButtonStyle"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/next"
+            android:text="Next"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Tap the buttons using your RIGHT hand"/>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="500"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:text="Total Taps"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/first"
+            android:textSize="30dp"
+            android:text="00"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        android:paddingLeft="70dp">
+        <Button
+            android:id ="@+id/push_button1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Tap"
+            android:textColor="@color/buttonColor"
+            android:background="@drawable/button_bg_round"
+            android:padding="15dp"
+            />
+        <Button
+            android:id ="@+id/push_button2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="@color/buttonColor"
+            android:text="Tap"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_bg_round"
+            android:padding="15dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Skip this hand"
+        android:textColor="@color/buttonColor"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/skip"/>
+
+</LinearLayout>

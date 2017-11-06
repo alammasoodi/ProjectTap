@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fingertap.Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/resultPage"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Result"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/buttonColor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:padding="10dp"
+            android:textColor="@color/buttonColor"
+            android:id="@+id/result"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Again.."
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/buttonColor"
+            android:id="@+id/again2"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:src="@drawable/tap4"/>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/left"
+        android:textSize="20dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/right"
+            android:textSize="20dp"
+            />
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Again.."
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/buttonColor"
+        android:id="@+id/again"
+        />
+
+</LinearLayout>
